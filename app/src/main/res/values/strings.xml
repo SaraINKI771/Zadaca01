@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Zadaca1</string>
+    <string name="favorite_twitter_searches">Favorite Twitter Searches</string>
+    <string name="tagged_searches">Tagged Searches</string>
+        <string name="search_hint">Enter Twitter search query here</string>
+        <string name="edit_text_hint">Enter your text here...</string>
+        <string name="save_button_text">Save</string>
+        <string name="android_fp">AndroidFp</string>
+        <string name="deitel">deitel</string>
+        <string name="google">google</string>
+        <string name="iphonefp">iphonefp</string>
+        <string name="javafp">javafp</string>
+        <string name="javahtp">javahtp</string>
+        <string name="edit_button_text">Edit</string>
+        <string name="clear_tags">Clear Tags</string>
+    </resources>

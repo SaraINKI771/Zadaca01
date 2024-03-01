@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Favorite Twitter Searches текст -->
+    <TextView
+        android:id="@+id/textViewFavoriteSearches"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:text="@string/favorite_twitter_searches"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/editTextSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/search_hint"
+        android:layout_below="@id/textViewFavoriteSearches"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bar_background"
+        android:elevation="4dp"
+        android:autofillHints="search"
+        android:inputType="text" />
+
+    <!-- Текст за внесување на зборови -->
+    <EditText
+        android:id="@+id/editTextTags"
+        android:layout_width="261dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextSearchBar"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_shadow"
+        android:hint="@string/edit_text_hint"
+        android:padding="8dp"
+        android:inputType="text"
+        android:autofillHints="text" />
+
+
+    <!-- Копче за зачувување -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextSearchBar"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/editTextTags"
+        android:text="@string/save_button_text" />
+
+
+    <!-- Портокалев квадрат со копчиња -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="423dp"
+        android:layout_below="@id/buttonSave"
+        android:layout_marginTop="11dp"
+        android:background="#FFA500">
+
+        <!-- Прво копче -->
+
+        <TextView
+            android:id="@+id/TaggedSearches"
+            android:layout_width="210dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tagged_searches"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/android_fp" />
+
+        <Button
+            android:id="@+id/editButton1"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+        <!-- Второ копче -->
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="110dp"
+            android:text="@string/deitel" />
+
+        <Button
+            android:id="@+id/editButton2"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+        <!-- трето копче -->
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:text="@string/google" />
+
+        <Button
+            android:id="@+id/editButton3"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+        <!-- четврто -->
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="230dp"
+            android:text="@string/iphonefp" />
+
+        <Button
+            android:id="@+id/editButton4"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+        <!-- четврто -->
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="290dp"
+            android:text="@string/javafp" />
+
+        <Button
+            android:id="@+id/editButton5"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+        <!-- пето -->
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="350dp"
+            android:text="@string/javahtp" />
+
+        <Button
+            android:id="@+id/editButton6"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_button_text" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="560dp"
+        android:text="@string/clear_tags" />
+
+
+</RelativeLayout>
+
+
